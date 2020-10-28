@@ -4,3 +4,4 @@ metadata:
   name: memcached-sample
 spec:
   size: 2
+  image: docker.io/memcached:1.4.36-alpine

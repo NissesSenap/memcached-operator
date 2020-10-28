@@ -25,6 +25,6 @@
               - -o
               - modern
               - -v
-              image: "docker.io/memcached:1.4.36-alpine"
+              image: "{{image}}"
               ports:
                 - containerPort: 11211

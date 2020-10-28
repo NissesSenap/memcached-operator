@@ -21,9 +21,9 @@ podman login -u ${QUAY_ID} -p ${QUAY_PASSWORD} quay.io
 ```bash
 #Change all Makefile stuff from docker to podman if you don't use docker.
 
-export IMG="quay.io/nissessenap/memcached-operator:v0.0.2"
+export IMG="quay.io/nissessenap/memcached-operator:v0.0.5"
 
-make docker-build docker-push IMG=quay.io/nissessenap/memcached-operator:v0.0.2
+make docker-build docker-push IMG=$IMG
 
 # Or ignore the makefile and just do it manually.
 podman build . -t ${IMG}

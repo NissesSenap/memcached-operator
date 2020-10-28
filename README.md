@@ -42,6 +42,9 @@ The above will create a NS called memcached-operator-system
 ```bash
 oc project memcached-operator-system
 
+# Appl the memcached cr
+kubectl apply -f config/samples/cache_v1_memcached.yaml
+
 # look at the logs
 kubectl logs -f deployment.apps/memcached-operator-controller-manager -n memcached-operator-system -c manager
 ```
